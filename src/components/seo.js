@@ -37,11 +37,11 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
-          name: `description`,
+          name: `Personal Website to immortalize Cannon Lock.`,
           content: metaDescription,
         },
         {
-          property: `og:title`,
+          property: `CannonLock`,
           content: title,
         },
         {
