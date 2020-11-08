@@ -49,17 +49,25 @@ const SwimBoy = () => {
   return (
     <Box
       sx={{
-        position: "absolute",
-        height: "auto",
-        width: "auto",
-        zIndex: 1000,
-        visibility: visible,
-        left: ["-30px", "-30px", "-10px", "-20px"]
+        width: "100%",
+        overflowX: "hidden"
       }}
-      onClick={() => setVisible("hidden")}
     >
-      <img src={Swimmer} />
+      <Box
+        sx={{
+          position: "absolute",
+          height: "auto",
+          width: "auto",
+          zIndex: 1000,
+          visibility: visible,
+          left: ["-30px", "-30px", "-10px", "-20px"]
+        }}
+        onClick={() => setVisible("hidden")}
+      >
+        <img src={Swimmer} />
+      </Box>
     </Box>
+    
   )
 }
 
