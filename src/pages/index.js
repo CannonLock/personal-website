@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/Layout"
-import MainPage from "../pages/Main"
+import MainPage from "./Main"
 
 const HeadShotImage = () => {
   const data = useStaticQuery(graphql`
