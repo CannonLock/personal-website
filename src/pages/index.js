@@ -1,10 +1,9 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 import { Box, Flex, Heading, Text } from "rebass"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Swimmer from "../images/WideAlphaRightSize.gif"
+import Swimmer from "../Gifs/WideAlphaRightSize.gif"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 

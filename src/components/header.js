@@ -76,6 +76,10 @@ const Header = ( props ) => {
       <Flex
         sx={{
           mb: 0,
+          ml: 2,
+          mr: 2,
+          borderRadius: 10,
+          borderBottomRightRadius: 10,
           p: `2 2`,
           bg:`highlight`,
         }}
