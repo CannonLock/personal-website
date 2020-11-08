@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React, { useState } from "react"
+import { useState } from "react"
 import { Heading, jsx } from 'theme-ui'
 import { Box, Button, Flex } from 'rebass'
 
