@@ -5,7 +5,9 @@ import light from "../../node_modules/@theme-ui/preset-swiss/src/index"
 // To switch themes just switch preset-<theme>
 
 const theme = () => {
-  if(window.matchMedia('(prefers-color-scheme: light)').matches){
+  if (typeof window == `undefined`) {
+    return ({})
+  } else if(window.matchMedia('(prefers-color-scheme: light)').matches){
     return(
       {
         ...light
