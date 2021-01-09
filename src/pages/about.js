@@ -106,7 +106,7 @@ const AboutPage = ( props ) => {
           <span>| 1/24/19 - 5/14/2021 |</span>
         </SegmentHeader>
         <ul>
-          <li>3.83 Cumulative GPA</li>
+          <li>3.73 Cumulative GPA</li>
         </ul>
         <SegmentHeader>
           <span>| UW-Oshkosh |</span>

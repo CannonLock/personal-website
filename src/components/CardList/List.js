@@ -7,15 +7,32 @@ import Img from "gatsby-image"
 import { jsx } from "theme-ui"
 
 import ListCard from "./ListCard"
+import { keyMaker } from "../../functions/general"
 
-const List = ( data ) => {
+const List = ( props ) => {
+
+  const data = props.data;
+  var key = 0;
+
   return(
-    data.map(( listItem ) => {
-      return(
-        <ListCard
-          image={listItem}
-        />
-      )
-    })
+    <>
+      {
+        data.map((cardInfo) => {
+          return(
+            <ListCard
+              key={ key = keyMaker(key) }
+              title={cardInfo.node.title}
+              image={cardInfo.node.image.childImageSharp.fluid}
+              alt={cardInfo.node.alt}
+              description={cardInfo.node.description}
+              tags={cardInfo.node.tags}
+            />
+          )
+          
+        })
+      }
+    </>
   )
 }
+
+export default List;

@@ -9,7 +9,7 @@ const NavListItem = ( props ) => {
   return (
     <li
       sx={{
-        color: `highlight`,
+        color: `background`,
         listStyleType: `none`,
         pl: 0
       }}        
@@ -19,7 +19,7 @@ const NavListItem = ( props ) => {
         sx={{
           textDecoration: `none`,
           fontSize: 3,
-          color: `highlight`,
+          color: `background`,
         }}
       >
         {props.children}

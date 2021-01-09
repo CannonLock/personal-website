@@ -22,7 +22,7 @@ const Tag = ( props ) => {
     >
       <Text
         sx={{
-          color: '#000'
+          color: 'background'
         }}
       >
         {props.tag}
@@ -63,6 +63,8 @@ const ListCard = ( props ) => {
         pr: 3,
         pb: 2,
         m: 'auto',
+        mt: 3,
+        mb: 3,
         minWidth: "250px",
         height: "auto",
         borderRadius: 30,
@@ -81,15 +83,20 @@ const ListCard = ( props ) => {
       <TagContainer>
         {
           tags.map((cardTag) => {
-            return (<Tag tag={cardTag} ></Tag>)
+            return (<Tag tag={cardTag} key={cardTag} ></Tag>)
           })
         }
       </TagContainer>
-      <Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row'
+        }}
+      >
         <Box
           sx = {{
             bg: 'primary',
-            pt: "15px",
+            pt: "20px",
             pl: "20px",
             pr: "20px",
             pb: "20px",
@@ -108,7 +115,9 @@ const ListCard = ( props ) => {
         </Box>
         <Text
           sx={{
-            display: ['none', 'flex', 'flex']
+            display: ['none', 'flex', 'flex'],
+            fontSize: 4,
+            ml: 3
           }}
         >
           {description}
